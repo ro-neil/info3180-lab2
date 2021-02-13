@@ -1,3 +1,132 @@
+:root {
+    --chocolate: #0F1108;
+    --blue: #00171F;
+    --yellow: #FFA400;
+    --green: #6BBF59;
+    --white: #FBFFFE;
+    --cream: #EDF7F6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 body {
     padding-top: 5rem;
+    color: var(--chocolate);
+}
+
+.profile-page{
+    display: flex;
+    justify-content:center;
+    font-family: Ubuntu, sans-serif;
+}
+.profile-container{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.profile-top{
+    border: 1px dotted var(--chocolate);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    padding-top: 25px;
+    width: 600px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom:25px;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.profile-top > p {
+    margin-top: 5px;
+
+}
+address > p{
+    margin-bottom: 5px;
+}
+address{
+    margin-bottom: 5px;
+}
+
+a:hover{
+    color: var(--green);
+}
+.profile-bottom{
+    border: 1px double grey;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    width: 600px;
+    background-color: var(--white);
+    color: var(--blue);
+}
+.profile-bottom > p > a{
+    color: var(--blue);
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+div > span{
+    display: block;
+    text-align: center;
+}
+.img-container{
+    display:flex;
+    justify-content: center;
+
+}
+
+.side-margin{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+button{
+    width: 130px;
+    border-radius: 5px;
+    border: 5px solid var(--yellow);
+    background-color: var(--yellow);
+    color: white;
+}
+button:hover{
+    border: 5px solid var(--green);
+    background-color: var(--green);
+    letter-spacing: 0.5px;
+    
+}
+
+button:enabled{
+    outline: none;
+}
+
+.button-container{
+    text-align: center;
+}
+
+#joined{
+    color: var(--yellow);
+}
+
+#name{
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+
+.count{
+    font-weight: bold;
 }

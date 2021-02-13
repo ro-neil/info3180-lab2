@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="profile-page">
+    <div class="profile-container">
+        <div class="profile-top side-margin">
+            <div class="img-container">
+                <img src="{{ url_for('static',filename='img/Roneil.jpg')}}">
+            </div>
+            <h1 id='name' class='center-align'>Roneil Barrett</h1>
+            <address class='center-align'>
+                <p>@ro-neil</p>
+                <p>Kingston, Jamaica</p>
+            </address>
+            <p id='joined' class='center-align'>{{date_joined}}</p>
+        </div>
+        <div class="profile-bottom  side-margin">
+            <p> 
+                I'm an aspiring Web Developer who exemplifies diligence, willingness and resourcefulness.
+                Feel free to <a href="mailto:roneil.barrett@mymona.uwi.edu">get in touch!</a>
+            </p>
+            <div class="status">
+                <div class="posts">
+                    <span id='post-count' class='count'>27</span>
+                    <span class='attribute'>Posts</span>
+                </div>
+                <div class="following">
+                    <span id='following-count' class='count'>80</span>
+                    <span class='attribute'>Followers</span>
+                </div>
+                <div class="followers">
+                    <span id='followers-count' class='count'>14</span>
+                    <span class='attribute'>Following</span>
+                </div>
+            </div>
+            <div class="button-container">
+                <button>Follow</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
